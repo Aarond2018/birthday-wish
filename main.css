@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Rubik:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0.9rem;
+  font-family: 'Rubik', sans-serif;
+  max-width: 1500px;
+  margin: 0 auto;
+  
+}
+
+#particles-js {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  flex-direction: column;
+  background: transparent;
+  
+}
+main img {
+  width: 5rem;
+}
+
+main h1 {
+  color: #333;
+  font-size: 2rem;
+  margin: 1rem 0 0.5rem 0;
+}
+
+main > a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  background: #23cad4;
+  animation: btn 2s ease-out infinite;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+
+
+
+@keyframes btn {
+  0% {
+    transform: scale(0.9);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.header {
+  background:linear-gradient( rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0.8)100%),url("./adi-goldstein-Hli3R6LKibo-unsplash.jpg");
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Rampart One', cursive;
+}
+
+.header h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.header > p {
+  font-size: 1.2rem;
+  margin: 1rem;
+}
+
+.text {
+  background: linear-gradient(rgba(60, 119, 129, 0.8) 100%, rgba(15,90,103,.8) 100%),url("./img-2.jpg");
+  /* height: 50vh; */
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  flex-direction: column;
+  
+}
+
+.text > p {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 1.2;
+  max-width: 800px;
+  text-align: center;
+}
+
+.text > h2 {
+  font-weight: 700;
+  margin: 1rem 0;
+  color: #fff;
+  text-align: center;
+  
+}
+
+.images-section {
+  height: 60vh;
+  padding: 0 1rem;
+}
+
+.images {
+  display: grid;
+  grid-template-areas: "lay1 lay1 lay1"
+                        "lay2 lay3 lay3"
+                        "lay4 lay4 lay5";
+  grid-gap: 0.5rem;
+  width: 800px;
+  max-width: 98%;
+  margin: 0 auto;
+}
+
+.img-container {
+  height: 10rem;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.con1 {
+  grid-area: lay1;
+}
+
+.con1 {
+  background: url("./imgA.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.con2 {
+  grid-area: lay2;
+}
+.con2 {
+  background: url("./imgB.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.con3 {
+  grid-area: lay3;
+}
+.con3 {
+  background: url("./imgC.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.con4 {
+  grid-area: lay4;
+}
+.con4 {
+  background: url("./imgD.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.con5 {
+  grid-area: lay5;
+}
+.con5 {
+  background: url("./imgE.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.thanks {
+  background: linear-gradient(rgba(64,72,75,.8) 100%, rgba(64,72,75,.8) 100%),url("./jason-leung-Xaanw0s0pMk-unsplash.jpg");
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+  margin: 0.5rem 0 0 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.thanks * {
+  text-align: center;
+}
+
+.thanks > p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.thanks > h3 {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.thanks > h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  animation: btn 2s ease-in-out infinite;
+}
